@@ -1,0 +1,20 @@
+<h3 class="text-center">Admin Users</h3>
+
+<div class="col-sm-4" *ngFor="let user of adminUsers">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{user.name}}</h3>
+    </div>
+    <div class="panel-body">
+      {{user.id}}
+    </div>
+    
+  </div>
+</div>
+
+<div class="col-sm-12">
+  <div class="jumbotron text-center">
+    <h2>View Public Users</h2>
+    <a class="btn btn-lg btn-success" routerLink="/public">Public Users</a>
+  </div>
+</div>
